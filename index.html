@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkyWay Travels</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Animations -->
+  <style>
+    @keyframes fadeZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .hero-text {
+      animation: fadeZoom 1.2s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-sky-50 text-gray-800">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-sky-600 text-white shadow-md">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-2xl font-bold">SkyWay Travels</h1>
+    <nav class="space-x-6">
+      <a href="#" class="hover:text-orange-300">Home</a>
+      <a href="#" class="hover:text-orange-300">Destinations</a>
+      <a href="#" class="hover:text-orange-300">Packages</a>
+      <a href="#" class="hover:text-orange-300">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="h-[70vh] bg-cover bg-center flex items-center justify-center"
+  style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');">
+
+  <div class="bg-black/50 p-10 rounded-lg">
+    <h2 class="hero-text text-white text-4xl md:text-5xl font-bold text-center">
+      Explore the World With Us
+    </h2>
+  </div>
+</section>
+
+<!-- ================= DESTINATIONS ================= -->
+<section class="py-16 max-w-7xl mx-auto px-6">
+  <h2 class="text-3xl font-bold text-center mb-10">Popular Destinations</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Card -->
+    <div class="bg-white rounded-xl shadow-lg p-5 transform transition hover:-translate-y-2">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+           class="rounded-lg mb-4">
+      <h3 class="text-xl font-semibold">Maldives</h3>
+      <p class="text-gray-600">Crystal clear waters and luxury resorts.</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-5 transform transition hover:-translate-y-2">
+      <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad"
+           class="rounded-lg mb-4">
+      <h3 class="text-xl font-semibold">Paris</h3>
+      <p class="text-gray-600">City of love, art, and culture.</p>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg p-5 transform transition hover:-translate-y-2">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+           class="rounded-lg mb-4">
+      <h3 class="text-xl font-semibold">Bali</h3>
+      <p class="text-gray-600">Tropical paradise with rich traditions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PACKAGES ================= -->
+<section class="bg-white py-16">
+  <h2 class="text-3xl font-bold text-center mb-10">Travel Packages</h2>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+
+    <!-- Basic -->
+    <div class="border rounded-xl p-6 text-center transition hover:border-sky-500">
+      <h3 class="text-xl font-semibold mb-2">Basic</h3>
+      <p class="text-3xl font-bold text-sky-600 mb-4">$499</p>
+      <ul class="space-y-2 text-gray-600">
+        <li>2 Destinations</li>
+        <li>3 Nights</li>
+        <li>Standard Hotels</li>
+      </ul>
+      <button class="mt-6 bg-sky-500 text-white px-6 py-2 rounded hover:bg-sky-600">
+        Book Now
+      </button>
+    </div>
+
+    <!-- Premium (Best Value) -->
+    <div class="border-4 border-orange-400 rounded-xl p-6 text-center shadow-lg">
+      <h3 class="text-xl font-semibold mb-2">Premium ⭐</h3>
+      <p class="text-3xl font-bold text-orange-500 mb-4">$999</p>
+      <ul class="space-y-2 text-gray-600">
+        <li>4 Destinations</li>
+        <li>7 Nights</li>
+        <li>Luxury Hotels</li>
+      </ul>
+      <button class="mt-6 bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600">
+        Book Now
+      </button>
+    </div>
+
+    <!-- Luxury -->
+    <div class="border rounded-xl p-6 text-center transition hover:border-green-500">
+      <h3 class="text-xl font-semibold mb-2">Luxury</h3>
+      <p class="text-3xl font-bold text-green-600 mb-4">$1599</p>
+      <ul class="space-y-2 text-gray-600">
+        <li>Unlimited Destinations</li>
+        <li>10 Nights</li>
+        <li>5-Star Resorts</li>
+      </ul>
+      <button class="mt-6 bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600">
+        Book Now
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-sky-600 text-white py-8 mt-10">
+  <div class="text-center space-y-2">
+    <p>📍 Chennai, India | 📞 +91 98765 43210</p>
+    <p>Email: support@skywaytravels.com</p>
+    <div class="space-x-4">
+      <a href="#" class="hover:text-orange-300">Facebook</a>
+      <a href="#" class="hover:text-orange-300">Instagram</a>
+      <a href="#" class="hover:text-orange-300">Twitter</a>
+    </div>
+    <p class="mt-4 text-sm">© 2026 SkyWay Travels. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
